@@ -5,8 +5,7 @@
  .field public static final UserTileExtension:Ljava/lang/String; = ".png"
  
 -.field protected static final UserTileUrlFormat:Ljava/lang/String; = "https://storage.%2$s/users/0x%1$s/myprofile/expressionprofile/profilephoto:UserTileStatic"
-+.field protected static final UserTileUrlFormat:Ljava/lang/String; = "http://192.168.1.82:8080/api/v1.1/profile/image/%1$s"
- 
++.field protected static final UserTileUrlFormat:Ljava/lang/String; = "${liveprotocol}://storage.%2$s/users/0x%1$s/myprofile/expressionprofile/profilephoto:UserTileStatic"
  
  # instance fields
 @@ -164,7 +164,7 @@
@@ -14,7 +13,7 @@
      .local v2, "responseStream":Ljava/io/InputStream;
      :try_start_0
 -    const-string/jumbo v5, "https://storage.%2$s/users/0x%1$s/myprofile/expressionprofile/profilephoto:UserTileStatic"
-+    const-string/jumbo v5, "http://192.168.1.82:8080/api/v1.1/profile/image/%1$s"
++    const-string/jumbo v5, "${liveprotocol}://storage.%2$s/users/0x%1$s/myprofile/expressionprofile/profilephoto:UserTileStatic"
  
      const/4 v4, 0x2
  
@@ -23,7 +22,7 @@
      if-eqz v4, :cond_1
  
 -    const-string/jumbo v4, "live.com"
-+    const-string/jumbo v4, "192.168.1.82:8080"
++    const-string/jumbo v4, "${livehostname}"
  
      :goto_0
      aput-object v4, v6, v7
@@ -34,7 +33,7 @@
      invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v4, "https://login."
-+    const-string/jumbo v4, "http://"
++    const-string/jumbo v4, "${liveprotocol}://login."
  
      invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -43,7 +42,7 @@
      move-result-object v3
  
 -    const-string/jumbo v4, ":443/RST2.srf"
-+    const-string/jumbo v4, "/auth/api/v1.1/player/profile/signin"
++    const-string/jumbo v4, "/auth/api/v1.1/account/create-session-ticket"
  
      invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -52,7 +51,7 @@
      invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v4, "https://login."
-+    const-string/jumbo v4, "http://"
++    const-string/jumbo v4, "${liveprotocol}://login."
  
      invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -61,7 +60,7 @@
      invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v4, "https://login."
-+    const-string/jumbo v4, "http://"
++    const-string/jumbo v4, "${liveprotocol}://login."
  
      invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -70,7 +69,7 @@
      invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v4, "https://login."
-+    const-string/jumbo v4, "http://"
++    const-string/jumbo v4, "${liveprotocol}://login."
  
      invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -79,7 +78,7 @@
      invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v5, "https://login."
-+    const-string/jumbo v5, "http://"
++    const-string/jumbo v5, "${liveprotocol}://login."
  
      invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -88,7 +87,7 @@
      invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v5, "https://login."
-+    const-string/jumbo v5, "http://"
++    const-string/jumbo v5, "${liveprotocol}://login."
  
      invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -97,7 +96,7 @@
      invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v5, "https://login."
-+    const-string/jumbo v5, "http://"
++    const-string/jumbo v5, "${liveprotocol}://login."
  
      invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -106,7 +105,7 @@
      invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v5, "https://login."
-+    const-string/jumbo v5, "http://"
++    const-string/jumbo v5, "${liveprotocol}://login."
  
      invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -115,7 +114,7 @@
      invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v5, "https://login."
-+    const-string/jumbo v5, "http://"
++    const-string/jumbo v5, "${liveprotocol}://login."
  
      invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -124,7 +123,7 @@
      invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v5, "https://login."
-+    const-string/jumbo v5, "http://"
++    const-string/jumbo v5, "${liveprotocol}://login."
  
      invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -133,7 +132,7 @@
      invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v5, "https://signup."
-+    const-string/jumbo v5, "http://"
++    const-string/jumbo v5, "${liveprotocol}://login."
  
      invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -142,7 +141,7 @@
      invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v5, "https://signup."
-+    const-string/jumbo v5, "http://"
++    const-string/jumbo v5, "${liveprotocol}://login."
  
      invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -151,7 +150,7 @@
      invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v5, "https://login."
-+    const-string/jumbo v5, "http://"
++    const-string/jumbo v5, "${liveprotocol}://login."
  
      invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -160,7 +159,7 @@
      invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v5, "https://login."
-+    const-string/jumbo v5, "http://"
++    const-string/jumbo v5, "${liveprotocol}://login."
  
      invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -169,7 +168,7 @@
      invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v5, "https://account."
-+    const-string/jumbo v5, "http://"
++    const-string/jumbo v5, "${liveprotocol}://login."
  
      invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -178,10 +177,9 @@
      invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v5, "https://login."
-+    const-string/jumbo v5, "http://"
++    const-string/jumbo v5, "${liveprotocol}://login."
  
      invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
- 
 --- a/smali/com/microsoft/onlineid/sts/ServerConfig$KnownEnvironment.smali
 +++ b/smali/com/microsoft/onlineid/sts/ServerConfig$KnownEnvironment.smali
 @@ -51,7 +51,7 @@
@@ -189,7 +187,7 @@
      const-string/jumbo v2, "production"
  
 -    const-string/jumbo v3, "https://go.microsoft.com/fwlink/?LinkId=398559"
-+    const-string/jumbo v3, "http://192.168.1.82:8080/api/v1.1/config"
++    const-string/jumbo v3, "${liveprotocol}://${livehostname}/auth/api/v1.1/account/register"
  
      invoke-direct {v0, v1, v4, v2, v3}, Lcom/microsoft/onlineid/sts/ServerConfig$KnownEnvironment;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
  
@@ -200,99 +198,7 @@
      .line 97
      :cond_1
 -    const-string/jumbo v0, "live.com"
-+    const-string/jumbo v0, "192.168.1.82:8080"
++    const-string/jumbo v0, "${livehostname}"
  
      goto :goto_1
  .end method
---- a/smali/com/minecraftearth/game/AuthenticationManager.smali
-+++ b/smali/com/minecraftearth/game/AuthenticationManager.smali
-@@ -0,0 +1,50 @@
-+.class public Lcom/minecraftearth/game/AuthenticationManager;
-+.super Ljava/lang/Object;
-+.source "AuthenticationManager.java"
-+
-+
-+# static fields
-+.field private static final INSTANCE:Lcom/minecraftearth/game/AuthenticationManager;
-+
-+.field private static final SIGNIN_URL:Ljava/lang/String; = "http://192.168.1.82:8080/auth/api/v1.1/player/profile/signin"
-+
-+
-+# instance fields
-+.field private currentSessionToken:Ljava/lang/String;
-+
-+.field private currentUserId:Ljava/lang/String;
-+
-+
-+# direct methods
-+.method static constructor <clinit>()V
-+    .locals 1
-+
-+    new-instance v0, Lcom/minecraftearth/game/AuthenticationManager;
-+
-+    invoke-direct {v0}, Lcom/minecraftearth/game/AuthenticationManager;-><init>()V
-+
-+    sput-object v0, Lcom/minecraftearth/game/AuthenticationManager;->INSTANCE:Lcom/minecraftearth/game/AuthenticationManager;
-+
-+    return-void
-+.end method
-+
-+.method private constructor <init>()V
-+    .locals 0
-+
-+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-+
-+    return-void
-+.end method
-+
-+.method public static getInstance()Lcom/minecraftearth/game/AuthenticationManager;
-+    .locals 1
-+
-+    sget-object v0, Lcom/minecraftearth/game/AuthenticationManager;->INSTANCE:Lcom/minecraftearth/game/AuthenticationManager;
-+
-+    return-object v0
-+.end method
-+
-+.method public authenticateWithSessionTicket(Ljava/lang/String;)Z
-+    .locals 4
-+    .param p1, "sessionTicket"    # Ljava/lang/String;
-+
-+    # Parse session ticket (format: userId-sessionToken)
-+    const-string v0, "-"
-+    invoke-virtual {p1, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
-+    move-result-object v1
-+    array-length v2, v1
-+    const/4 v3, 0x2
-+    if-ge v2, v3, :cond_0
-+    const/4 v0, 0x0
-+    return v0
-+
-+    :cond_0
-+    const/4 v0, 0x0
-+    aget-object v2, v1, v0
-+    iput-object v2, p0, Lcom/minecraftearth/game/AuthenticationManager;->currentUserId:Ljava/lang/String;
-+
-+    const/4 v0, 0x1
-+    aget-object v0, v1, v0
-+    iput-object v0, p0, Lcom/minecraftearth/game/AuthenticationManager;->currentSessionToken:Ljava/lang/String;
-+
-+    const/4 v0, 0x1
-+    return v0
-+.end method
-+
-+.method public getCurrentSessionToken()Ljava/lang/String;
-+    .locals 1
-+
-+    iget-object v0, p0, Lcom/minecraftearth/game/AuthenticationManager;->currentSessionToken:Ljava/lang/String;
-+
-+    return-object v0
-+.end method
-+
-+.method public getCurrentUserId()Ljava/lang/String;
-+    .locals 1
-+
-+    iget-object v0, p0, Lcom/minecraftearth/game/AuthenticationManager;->currentUserId:Ljava/lang/String;
-+
-+    return-object v0
-+.end method
-+.end class
