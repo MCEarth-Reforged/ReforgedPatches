@@ -2,7 +2,7 @@ From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Custom Auth System <auth@192.168.1.82>
 Date: Tue, 4 Mar 2026 18:30:00 +0000
 Subject: [PATCH] Integrate custom authentication system
- 
+
  
 diff --git a/smali/com/microsoft/onlineid/internal/Applications.smali b/smali/com/microsoft/onlineid/internal/Applications.smali
 index 2de836345baaacdb9a9f5979d7abf666f2aa67bc..232c7fbbad24bc2339fc31fecc56d1d0948d3b6d 100644
@@ -37,7 +37,6 @@ index 2de836345baaacdb9a9f5979d7abf666f2aa67bc..232c7fbbad24bc2339fc31fecc56d1d0
  
 -.field protected static final UserTileUrlFormat:Ljava/lang/String; = "https://storage.%2$s/users/0x%1$s/myprofile/expressionprofile/profilephoto:UserTileStatic"
 +.field protected static final UserTileUrlFormat:Ljava/lang/String; = "${liveprotocol}://storage.%2$s/users/0x%1$s/myprofile/expressionprofile/profilephoto:UserTileStatic"
- 
  
  # instance fields
 @@ -164,7 +164,7 @@
@@ -241,5 +240,3 @@ index 2de836345baaacdb9a9f5979d7abf666f2aa67bc..232c7fbbad24bc2339fc31fecc56d1d0
  
      goto :goto_1
  .end method
- 
-
