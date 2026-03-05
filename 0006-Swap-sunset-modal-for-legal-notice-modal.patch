@@ -18,7 +18,7 @@ index 40cba1d35ae1421c4ee1b4175c2733474a505620..cd18ea92e1f1b28a744507a16de2a563
  sunset.overlay.button.redeem=Redeem a Free Copy of Minecraft	#
  sunset.modal.title=Time to Sunset	#
 -sunset.modal.body=Thanks for playing Minecraft Earth! We have made the difficult discussion to end support for Minecraft Earth on 30 June 2021. Thanks for playing and we hope to see you in Minecraft!	#
-+sunset.modal.body=Project Earth is NOT an official Minecraft product. Project Earth is not affiliated with, Endorsed by, or Associated with Mojang Studios or Microsoft. Minecraft and Minecraft Earth are Trademarks of Mojang Studios.
++sunset.modal.body=MCEarth: Reforged is NOT an official Minecraft product. MCEarth: Reforged is not affiliated with, Endorsed by, or Associated with Mojang Studios or Microsoft. Minecraft and Minecraft Earth are Trademarks of Mojang Studios.
  sunset.modal.button.one=Sunset Information	#
  sunset.modal.button.two=Good to know	#
  sunset.settings.button=Sunset Information	#
@@ -36,7 +36,7 @@ index 348cdaea906518e1a89c7357b15b7a7bdb6b5f28..c3624aabc58103685509fc8aaa2d292d
  sunset.overlay.button.redeem=Redeem Free Copy of Minecraft
  sunset.modal.title=Time to Sunset
 -sunset.modal.body=Thanks for playing Minecraft Earth! We have made the difficult discussion to end support for Minecraft Earth on June 30th 2021. Thanks for playing and we hope to see you in Minecraft!
-+sunset.modal.body=Project Earth is NOT an official Minecraft product. Project Earth is not affiliated with, Endorsed by, or Associated with Mojang Studios or Microsoft. Minecraft and Minecraft Earth are Trademarks of Mojang Studios.
++sunset.modal.body=MCEarth: Reforged is NOT an official Minecraft product. MCEarth: Reforged is not affiliated with, Endorsed by, or Associated with Mojang Studios or Microsoft. Minecraft and Minecraft Earth are Trademarks of Mojang Studios.
  sunset.modal.button.one=Sunset Information
  sunset.modal.button.two=Good to Know
  sunset.settings.button=Sunset Information
