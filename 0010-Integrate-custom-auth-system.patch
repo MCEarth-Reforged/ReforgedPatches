@@ -5,7 +5,7 @@
  .field public static final UserTileExtension:Ljava/lang/String; = ".png"
  
 -.field protected static final UserTileUrlFormat:Ljava/lang/String; = "https://storage.%2$s/users/0x%1$s/myprofile/expressionprofile/profilephoto:UserTileStatic"
-+.field protected static final UserTileUrlFormat:Ljava/lang/String; = "${liveprotocol}://storage.%2$s/users/0x%1$s/myprofile/expressionprofile/profilephoto:UserTileStatic"
++.field protected static final UserTileUrlFormat:Ljava/lang/String; = "http://storage.%2$s/users/0x%1$s/myprofile/expressionprofile/profilephoto:UserTileStatic"
  
  # instance fields
 @@ -164,7 +164,7 @@
@@ -13,7 +13,7 @@
      .local v2, "responseStream":Ljava/io/InputStream;
      :try_start_0
 -    const-string/jumbo v5, "https://storage.%2$s/users/0x%1$s/myprofile/expressionprofile/profilephoto:UserTileStatic"
-+    const-string/jumbo v5, "${liveprotocol}://storage.%2$s/users/0x%1$s/myprofile/expressionprofile/profilephoto:UserTileStatic"
++    const-string/jumbo v5, "http://storage.%2$s/users/0x%1$s/myprofile/expressionprofile/profilephoto:UserTileStatic"
  
      const/4 v4, 0x2
  
@@ -22,7 +22,7 @@
      if-eqz v4, :cond_1
  
 -    const-string/jumbo v4, "live.com"
-+    const-string/jumbo v4, "${livehostname}"
++    const-string/jumbo v4, "102.168.1.82:8080"
  
      :goto_0
      aput-object v4, v6, v7
@@ -33,7 +33,7 @@
      invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v4, "https://login."
-+    const-string/jumbo v4, "${liveprotocol}://login."
++    const-string/jumbo v4, "http://login."
  
      invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -51,7 +51,7 @@
      invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v4, "https://login."
-+    const-string/jumbo v4, "${liveprotocol}://login."
++    const-string/jumbo v4, "http://login."
  
      invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -60,7 +60,7 @@
      invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v4, "https://login."
-+    const-string/jumbo v4, "${liveprotocol}://login."
++    const-string/jumbo v4, "http://login."
  
      invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -69,7 +69,7 @@
      invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v4, "https://login."
-+    const-string/jumbo v4, "${liveprotocol}://login."
++    const-string/jumbo v4, "http://login."
  
      invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -78,7 +78,7 @@
      invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v5, "https://login."
-+    const-string/jumbo v5, "${liveprotocol}://login."
++    const-string/jumbo v5, "http://login."
  
      invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -87,7 +87,7 @@
      invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v5, "https://login."
-+    const-string/jumbo v5, "${liveprotocol}://login."
++    const-string/jumbo v5, "http://login."
  
      invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -96,7 +96,7 @@
      invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v5, "https://login."
-+    const-string/jumbo v5, "${liveprotocol}://login."
++    const-string/jumbo v5, "http://login."
  
      invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -105,7 +105,7 @@
      invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v5, "https://login."
-+    const-string/jumbo v5, "${liveprotocol}://login."
++    const-string/jumbo v5, "http://login."
  
      invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -114,7 +114,7 @@
      invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v5, "https://login."
-+    const-string/jumbo v5, "${liveprotocol}://login."
++    const-string/jumbo v5, "http://login."
  
      invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -123,7 +123,7 @@
      invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v5, "https://login."
-+    const-string/jumbo v5, "${liveprotocol}://login."
++    const-string/jumbo v5, "http://login."
  
      invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -132,7 +132,7 @@
      invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v5, "https://signup."
-+    const-string/jumbo v5, "${liveprotocol}://login."
++    const-string/jumbo v5, "http://login."
  
      invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -141,7 +141,7 @@
      invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v5, "https://signup."
-+    const-string/jumbo v5, "${liveprotocol}://login."
++    const-string/jumbo v5, "http://login."
  
      invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -150,7 +150,7 @@
      invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v5, "https://login."
-+    const-string/jumbo v5, "${liveprotocol}://login."
++    const-string/jumbo v5, "http://login."
  
      invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -159,7 +159,7 @@
      invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v5, "https://login."
-+    const-string/jumbo v5, "${liveprotocol}://login."
++    const-string/jumbo v5, "http://login."
  
      invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -168,7 +168,7 @@
      invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v5, "https://account."
-+    const-string/jumbo v5, "${liveprotocol}://login."
++    const-string/jumbo v5, "http://login."
  
      invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
  
@@ -177,7 +177,7 @@
      invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
  
 -    const-string/jumbo v5, "https://login."
-+    const-string/jumbo v5, "${liveprotocol}://login."
++    const-string/jumbo v5, "http://login."
  
      invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 --- a/smali/com/microsoft/onlineid/sts/ServerConfig$KnownEnvironment.smali
@@ -187,7 +187,7 @@
      const-string/jumbo v2, "production"
  
 -    const-string/jumbo v3, "https://go.microsoft.com/fwlink/?LinkId=398559"
-+    const-string/jumbo v3, "${liveprotocol}://${livehostname}/auth/api/v1.1/account/register"
++    const-string/jumbo v3, "http://102.168.1.82:8080/auth/api/v1.1/account/register"
  
      invoke-direct {v0, v1, v4, v2, v3}, Lcom/microsoft/onlineid/sts/ServerConfig$KnownEnvironment;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
  
@@ -198,7 +198,7 @@
      .line 97
      :cond_1
 -    const-string/jumbo v0, "live.com"
-+    const-string/jumbo v0, "${livehostname}"
++    const-string/jumbo v0, "102.168.1.82:8080"
  
      goto :goto_1
  .end method
